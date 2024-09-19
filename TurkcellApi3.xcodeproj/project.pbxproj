@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC644A832C9C2005009D18F7 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC644A822C9C2005009D18F7 /* ViewControllerViewModel.swift */; };
+		DC644A852C9C203F009D18F7 /* MovieUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC644A842C9C203F009D18F7 /* MovieUIModel.swift */; };
+		DCB92A302C9C076E000290DE /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DCB92A2F2C9C076E000290DE /* RxAlamofire */; };
+		DCB92A332C9C07D1000290DE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DCB92A322C9C07D1000290DE /* Kingfisher */; };
+		DCB92A532C9C0C61000290DE /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB92A522C9C0C61000290DE /* ApiService.swift */; };
+		DCB92A562C9C0D8B000290DE /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB92A552C9C0D8B000290DE /* MovieEntity.swift */; };
 		DCC8DB962C9BFF8D0011F184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC8DB952C9BFF8D0011F184 /* AppDelegate.swift */; };
 		DCC8DB982C9BFF8D0011F184 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC8DB972C9BFF8D0011F184 /* SceneDelegate.swift */; };
 		DCC8DB9A2C9BFF8D0011F184 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC8DB992C9BFF8D0011F184 /* ViewController.swift */; };
@@ -16,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC644A822C9C2005009D18F7 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		DC644A842C9C203F009D18F7 /* MovieUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUIModel.swift; sourceTree = "<group>"; };
+		DCB92A522C9C0C61000290DE /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		DCB92A552C9C0D8B000290DE /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
 		DCC8DB922C9BFF8D0011F184 /* TurkcellApi3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurkcellApi3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC8DB952C9BFF8D0011F184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC8DB972C9BFF8D0011F184 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +41,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB92A332C9C07D1000290DE /* Kingfisher in Frameworks */,
+				DCB92A302C9C076E000290DE /* RxAlamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCB92A512C9C0C43000290DE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DCB92A522C9C0C61000290DE /* ApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DCB92A542C9C0D5B000290DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC644A842C9C203F009D18F7 /* MovieUIModel.swift */,
+				DCB92A552C9C0D8B000290DE /* MovieEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DCC8DB892C9BFF8D0011F184 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +85,12 @@
 		DCC8DB942C9BFF8D0011F184 /* TurkcellApi3 */ = {
 			isa = PBXGroup;
 			children = (
+				DCB92A542C9C0D5B000290DE /* Model */,
+				DCB92A512C9C0C43000290DE /* Network */,
 				DCC8DB952C9BFF8D0011F184 /* AppDelegate.swift */,
 				DCC8DB972C9BFF8D0011F184 /* SceneDelegate.swift */,
 				DCC8DB992C9BFF8D0011F184 /* ViewController.swift */,
+				DC644A822C9C2005009D18F7 /* ViewControllerViewModel.swift */,
 				DCC8DB9B2C9BFF8D0011F184 /* Main.storyboard */,
 				DCC8DB9E2C9BFF8E0011F184 /* Assets.xcassets */,
 				DCC8DBA02C9BFF8E0011F184 /* LaunchScreen.storyboard */,
@@ -111,6 +143,10 @@
 				Base,
 			);
 			mainGroup = DCC8DB892C9BFF8D0011F184;
+			packageReferences = (
+				DCB92A2E2C9C076E000290DE /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				DCB92A312C9C07D0000290DE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = DCC8DB932C9BFF8D0011F184 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC8DB9A2C9BFF8D0011F184 /* ViewController.swift in Sources */,
+				DC644A832C9C2005009D18F7 /* ViewControllerViewModel.swift in Sources */,
+				DCB92A562C9C0D8B000290DE /* MovieEntity.swift in Sources */,
 				DCC8DB962C9BFF8D0011F184 /* AppDelegate.swift in Sources */,
+				DCB92A532C9C0C61000290DE /* ApiService.swift in Sources */,
+				DC644A852C9C203F009D18F7 /* MovieUIModel.swift in Sources */,
 				DCC8DB982C9BFF8D0011F184 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +403,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCB92A2E2C9C076E000290DE /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.2;
+			};
+		};
+		DCB92A312C9C07D0000290DE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCB92A2F2C9C076E000290DE /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCB92A2E2C9C076E000290DE /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+		DCB92A322C9C07D1000290DE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCB92A312C9C07D0000290DE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCC8DB8A2C9BFF8D0011F184 /* Project object */;
 }

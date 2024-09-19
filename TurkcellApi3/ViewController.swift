@@ -6,14 +6,24 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
-
+    let viewModel = ViewControllerViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        observeItems()
+        
+        viewModel.getData()
     }
-
-
+    
+    func observeItems() {
+        viewModel.data
+            .observe(on: MainScheduler.instance)
+            .subscribe { result in
+                
+            }.disposed(by: viewModel.disposeBag)
+    }
 }
 
