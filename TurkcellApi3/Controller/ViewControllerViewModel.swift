@@ -11,6 +11,8 @@ import RxSwift
 
 class ViewControllerViewModel {
     
+    let nameText : BehaviorRelay<String> = BehaviorRelay(value: "")
+    
     let disposeBag = DisposeBag()
     
     var data = BehaviorRelay<[MovieUIModel]>(value : [])
@@ -20,8 +22,8 @@ class ViewControllerViewModel {
         self.apiService = apiService
     }
 
-    func getData() {
-        self.apiService.searchMovies()
+    func getData(searchText : String) {
+        self.apiService.searchMovies(searchText: searchText)
             .observe(on: MainScheduler.instance)
             .subscribe { response in // closure
                 let models = response?.result.map {
@@ -29,8 +31,21 @@ class ViewControllerViewModel {
                 }
                 self.data.accept(models ?? [])
             } onFailure: { error in
+                //(error as? NSError)?.code == 401
                 self.data.accept([])
             }.disposed(by: disposeBag)
             
+    }
+    
+    func save() {
+        print(nameText.value)
+    }
+    
+    var rowCount : Int {
+        return self.data.value.count
+    }
+    
+    func getItem(index : Int) -> MovieUIModel {
+        return self.data.value[index]
     }
 }

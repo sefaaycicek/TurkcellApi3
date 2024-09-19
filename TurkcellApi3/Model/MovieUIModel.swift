@@ -19,4 +19,8 @@ class MovieUIModel {
         self.type = type
         self.poster = poster
     }
+    
+    var url : URL? {
+        return URL(string: poster)
+    }
 }

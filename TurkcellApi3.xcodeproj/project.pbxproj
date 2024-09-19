@@ -3,38 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 73;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC644A832C9C2005009D18F7 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC644A822C9C2005009D18F7 /* ViewControllerViewModel.swift */; };
-		DC644A852C9C203F009D18F7 /* MovieUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC644A842C9C203F009D18F7 /* MovieUIModel.swift */; };
+		DC42984C2C9C395600CE19E5 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = DC42984B2C9C395600CE19E5 /* SkeletonView */; };
 		DCB92A302C9C076E000290DE /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DCB92A2F2C9C076E000290DE /* RxAlamofire */; };
 		DCB92A332C9C07D1000290DE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DCB92A322C9C07D1000290DE /* Kingfisher */; };
-		DCB92A532C9C0C61000290DE /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB92A522C9C0C61000290DE /* ApiService.swift */; };
-		DCB92A562C9C0D8B000290DE /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB92A552C9C0D8B000290DE /* MovieEntity.swift */; };
-		DCC8DB962C9BFF8D0011F184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC8DB952C9BFF8D0011F184 /* AppDelegate.swift */; };
-		DCC8DB982C9BFF8D0011F184 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC8DB972C9BFF8D0011F184 /* SceneDelegate.swift */; };
-		DCC8DB9A2C9BFF8D0011F184 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC8DB992C9BFF8D0011F184 /* ViewController.swift */; };
-		DCC8DB9D2C9BFF8D0011F184 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DCC8DB9C2C9BFF8D0011F184 /* Base */; };
-		DCC8DB9F2C9BFF8E0011F184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC8DB9E2C9BFF8E0011F184 /* Assets.xcassets */; };
-		DCC8DBA22C9BFF8E0011F184 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DCC8DBA12C9BFF8E0011F184 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC644A822C9C2005009D18F7 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
-		DC644A842C9C203F009D18F7 /* MovieUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUIModel.swift; sourceTree = "<group>"; };
-		DCB92A522C9C0C61000290DE /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		DCB92A552C9C0D8B000290DE /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
 		DCC8DB922C9BFF8D0011F184 /* TurkcellApi3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurkcellApi3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCC8DB952C9BFF8D0011F184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCC8DB972C9BFF8D0011F184 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCC8DB992C9BFF8D0011F184 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DCC8DB9C2C9BFF8D0011F184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DCC8DB9E2C9BFF8E0011F184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DCC8DBA12C9BFF8E0011F184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DCC8DBA32C9BFF8E0011F184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DC4298432C9C36E200CE19E5 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+				Assets.xcassets,
+				Constants.swift,
+				Controller/MovieCell.swift,
+				Controller/MovieCell.xib,
+				Controller/ViewController.swift,
+				Controller/ViewControllerViewModel.swift,
+				Model/MovieEntity.swift,
+				Model/MovieUIModel.swift,
+				Network/ApiService.swift,
+				Network/OAuthHandler.swift,
+				SceneDelegate.swift,
+				View/CustomLabel.swift,
+			);
+			target = DCC8DB912C9BFF8D0011F184 /* TurkcellApi3 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		DC4298442C9C36E200CE19E5 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = DCC8DB902C9BFF8D0011F184 /* Resources */;
+			membershipExceptions = (
+				Base.lproj/LaunchScreen.storyboard,
+				Base.lproj/Main.storyboard,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DC4298382C9C36E200CE19E5 /* TurkcellApi3 */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (DC4298432C9C36E200CE19E5 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, DC4298442C9C36E200CE19E5 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = TurkcellApi3; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DCC8DB8F2C9BFF8D0011F184 /* Frameworks */ = {
@@ -42,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB92A332C9C07D1000290DE /* Kingfisher in Frameworks */,
+				DC42984C2C9C395600CE19E5 /* SkeletonView in Frameworks */,
 				DCB92A302C9C076E000290DE /* RxAlamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,27 +67,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DCB92A512C9C0C43000290DE /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				DCB92A522C9C0C61000290DE /* ApiService.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		DCB92A542C9C0D5B000290DE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DC644A842C9C203F009D18F7 /* MovieUIModel.swift */,
-				DCB92A552C9C0D8B000290DE /* MovieEntity.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		DCC8DB892C9BFF8D0011F184 = {
 			isa = PBXGroup;
 			children = (
-				DCC8DB942C9BFF8D0011F184 /* TurkcellApi3 */,
+				DC4298382C9C36E200CE19E5 /* TurkcellApi3 */,
 				DCC8DB932C9BFF8D0011F184 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,23 +81,6 @@
 				DCC8DB922C9BFF8D0011F184 /* TurkcellApi3.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DCC8DB942C9BFF8D0011F184 /* TurkcellApi3 */ = {
-			isa = PBXGroup;
-			children = (
-				DCB92A542C9C0D5B000290DE /* Model */,
-				DCB92A512C9C0C43000290DE /* Network */,
-				DCC8DB952C9BFF8D0011F184 /* AppDelegate.swift */,
-				DCC8DB972C9BFF8D0011F184 /* SceneDelegate.swift */,
-				DCC8DB992C9BFF8D0011F184 /* ViewController.swift */,
-				DC644A822C9C2005009D18F7 /* ViewControllerViewModel.swift */,
-				DCC8DB9B2C9BFF8D0011F184 /* Main.storyboard */,
-				DCC8DB9E2C9BFF8E0011F184 /* Assets.xcassets */,
-				DCC8DBA02C9BFF8E0011F184 /* LaunchScreen.storyboard */,
-				DCC8DBA32C9BFF8E0011F184 /* Info.plist */,
-			);
-			path = TurkcellApi3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +119,6 @@
 				};
 			};
 			buildConfigurationList = DCC8DB8D2C9BFF8D0011F184 /* Build configuration list for PBXProject "TurkcellApi3" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -146,7 +129,9 @@
 			packageReferences = (
 				DCB92A2E2C9C076E000290DE /* XCRemoteSwiftPackageReference "RxAlamofire" */,
 				DCB92A312C9C07D0000290DE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DC42984A2C9C395600CE19E5 /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
+			preferredProjectObjectVersion = 56;
 			productRefGroup = DCC8DB932C9BFF8D0011F184 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,9 +146,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC8DB9F2C9BFF8E0011F184 /* Assets.xcassets in Resources */,
-				DCC8DBA22C9BFF8E0011F184 /* Base in Resources */,
-				DCC8DB9D2C9BFF8D0011F184 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,36 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC8DB9A2C9BFF8D0011F184 /* ViewController.swift in Sources */,
-				DC644A832C9C2005009D18F7 /* ViewControllerViewModel.swift in Sources */,
-				DCB92A562C9C0D8B000290DE /* MovieEntity.swift in Sources */,
-				DCC8DB962C9BFF8D0011F184 /* AppDelegate.swift in Sources */,
-				DCB92A532C9C0C61000290DE /* ApiService.swift in Sources */,
-				DC644A852C9C203F009D18F7 /* MovieUIModel.swift in Sources */,
-				DCC8DB982C9BFF8D0011F184 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DCC8DB9B2C9BFF8D0011F184 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCC8DB9C2C9BFF8D0011F184 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DCC8DBA02C9BFF8E0011F184 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCC8DBA12C9BFF8E0011F184 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DCC8DBA42C9BFF8E0011F184 /* Debug */ = {
@@ -405,6 +361,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DC42984A2C9C395600CE19E5 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.31.0;
+			};
+		};
 		DCB92A2E2C9C076E000290DE /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
@@ -424,6 +388,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DC42984B2C9C395600CE19E5 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC42984A2C9C395600CE19E5 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
 		DCB92A2F2C9C076E000290DE /* RxAlamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DCB92A2E2C9C076E000290DE /* XCRemoteSwiftPackageReference "RxAlamofire" */;
