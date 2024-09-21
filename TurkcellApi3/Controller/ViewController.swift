@@ -8,8 +8,11 @@
 import UIKit
 import RxSwift
 
-class ViewController: UIViewController {
 
+
+class ViewController: UIViewController {
+  
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var searchBar : UISearchBar!
     @IBOutlet weak var collectionView : UICollectionView!
@@ -28,8 +31,9 @@ class ViewController: UIViewController {
         
         viewModel.getData(searchText: "man")
         showAlert(title: "", message: "")
-    }
     
+    }
+ 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         viewModel.save()
     }
@@ -104,8 +108,6 @@ extension ViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return CELL_PADDING
     }
-    
-    
 }
 
 

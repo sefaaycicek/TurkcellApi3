@@ -23,6 +23,7 @@
 				AppDelegate.swift,
 				Assets.xcassets,
 				Constants.swift,
+				Controller/map/MapViewController.swift,
 				Controller/MovieCell.swift,
 				Controller/MovieCell.xib,
 				Controller/ViewController.swift,
@@ -286,11 +287,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TurkcellApi3/TurkcellApi3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y7653CXCKR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TurkcellApi3/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Hareket ederken konumuna bağlı kampanya bildirimlerini alabilmen için";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Yakınındaki otelleri listelemek için";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -301,7 +305,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.turkcell.TurkcellApi3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.turkcell.TurkcellEgitim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,11 +318,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TurkcellApi3/TurkcellApi3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y7653CXCKR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TurkcellApi3/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Hareket ederken konumuna bağlı kampanya bildirimlerini alabilmen için";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Yakınındaki otelleri listelemek için";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,7 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.turkcell.TurkcellApi3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.turkcell.TurkcellEgitim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
